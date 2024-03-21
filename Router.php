@@ -2,10 +2,10 @@
     include_once "Controller.php";
 
     class Router{
-        public $controllers;
+        public $controllers=[];
 
         public function __construct(){
-            $this->showErrors(1);
+            $this->showErrors(0);
             $this->$controllers=[];
         }
 
@@ -30,7 +30,7 @@
             if($debug==1){
                 ini_set('display_errors', 1);
                 ini_set('display_startup_errors', 1);
-                error_reporting(E_ALL);
+                error_reporting(E_ALL & ~E_NOTICE);
             }
         }
     }

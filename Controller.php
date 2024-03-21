@@ -9,9 +9,7 @@ class Controller{
     public function renderView($view,$data=[]){
         extract($data);
 
-        include "views/header.php";
-        include "views/$view.php";
-        include "views/footer.php";
+        include "./views/template.php";
     }
 }
 ?>
