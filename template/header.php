@@ -10,7 +10,7 @@
           <a class="nav-link active" aria-current="page" href="start.php?action=home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="start.php?action=about">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="start.php?action=userList">Admin</a>
