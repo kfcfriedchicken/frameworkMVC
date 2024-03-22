@@ -30,8 +30,8 @@
       <input type="text" class="form-control" id="urole" name="urole">
     </div>
     <div class="form-group p-2">
-        <button type="submit" class="btn btn-primary">Add User</button>
-        <button type="submit" class="btn btn-primary">Cancel</button>
+        <button type="submit" value="add" class="btn btn-primary">Add User</button>
+        <button type="submit" value="cancel" class="btn btn-primary">Cancel</button>
     </div>
   </form>
 </div>

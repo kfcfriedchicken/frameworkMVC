@@ -2,11 +2,11 @@
     include_once "Controller.php";
 
     class Router{
-        public $controllers=[];
+        public $controllers;
 
         public function __construct(){
             $this->showErrors(0);
-            $this->$controllers=[];
+            $this->$controllers['default']="";
         }
 
         public function run(){

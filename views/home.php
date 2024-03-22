@@ -5,7 +5,7 @@
     </p>
     <img src="images/mvcframework.png" alt="MVC Framework">
     <p class="lead mt-3">
-    The primary components of <b>Model-View-Controller</b> application are:
+    The primary components of <b>Model-View-Controller</b> applications are:
     </p>
     <p>
     <h5>Model</h5>

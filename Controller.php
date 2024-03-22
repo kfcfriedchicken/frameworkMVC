@@ -7,8 +7,7 @@ class Controller{
     }
 
     public function renderView($view,$data=[]){
-        extract($data);
-
+        
         include "./views/template.php";
     }
 }
