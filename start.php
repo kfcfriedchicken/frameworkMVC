@@ -1,6 +1,6 @@
 <?php
-    include_once "Controller.php";
-    include_once "Router.php";
+    include_once "./framework/Controller.php";
+    include_once "./framework/Router.php";
     include_once "./controllers/Home.php";
     include_once "./controllers/UserList.php";
     include_once "./controllers/UserAdd.php";

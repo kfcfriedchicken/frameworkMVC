@@ -1,7 +1,7 @@
     <div class="container">
         <div class="col">
             <form action="start.php" method="GET">
-            <button class="btn btn-primary" type="submit" name="action" value="userAdd">Add User</button>
+            <a href="start.php?action=userAdd" class="btn btn-primary">Add User</a>
             <button class="btn btn-primary" type="submit" name="action" value="userUpdate">Update User</button>
             <button class="btn btn-primary" type="submit" name="action" value="userDelete">Delete User</button>
             <table class="table table-bordered table-striped">

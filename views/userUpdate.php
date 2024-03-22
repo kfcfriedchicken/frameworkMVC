@@ -30,8 +30,8 @@
       <input type="text" class="form-control" id="urole" name="urole" value="<?php echo $data->getUrole(); ?>">
     </div>
     <div class="form-group p-2">
-        <button type="submit" value="update" class="btn btn-primary">Update User</button>
-        <button type="submit" value="cancel" class="btn btn-primary">Cancel</button>
+        <button type="submit" name="submit" value="Confirm" class="btn btn-primary">Save Changes</button>
+        <button type="submit" name="submit" value="Cancel" class="btn btn-primary">Cancel</button>
     </div>
   </form>
 </div>

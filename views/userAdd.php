@@ -19,7 +19,7 @@
     </div>
     <div class="form-group p-2">
       <label for="passwd">Password:</label>
-      <input type="password" class="form-control" id="passwd" name="passwd" required>
+      <input type="text" class="form-control" id="passwd" name="passwd" required>
     </div>
     <div class="form-group p-2">
       <label for="email">Email:</label>
@@ -30,8 +30,8 @@
       <input type="text" class="form-control" id="urole" name="urole">
     </div>
     <div class="form-group p-2">
-        <button type="submit" value="add" class="btn btn-primary">Add User</button>
-        <button type="submit" value="cancel" class="btn btn-primary">Cancel</button>
+        <button type="submit" name="submit" value="Confirm" class="btn btn-primary">Save User</button>
+        <button type="submit" name="submit" value="Cancel" class="btn btn-primary">Cancel</button>
     </div>
   </form>
 </div>

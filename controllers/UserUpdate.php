@@ -12,18 +12,19 @@ class UserUpdate extends Controller{
             $user = $userDAO->getUser($userID);
             $this->renderView("userUpdate",$user);
         }else{
-            //** Get HTTP Input */
-            $user = new User();
-            $user->setUserID($_POST['userID']);
-            $user->setFirstname($_POST['firstname']);
-            $user->setLastname($_POST['lastname']);
-            $user->setUsername($_POST['username']);
-            $user->setPasswd($_POST['passwd']);
-            $user->setUrole($_POST['urole']);
-            $user->setEmail($_POST['email']);
-            //** Update Model */
-            $userDAO = new UserDAO();
-            $userDAO->updateUser($user);
+            if($_POST['submit']=='Confirm'){
+                $user = new User();
+                $user->setUserID($_POST['userID']);
+                $user->setFirstname($_POST['firstname']);
+                $user->setLastname($_POST['lastname']);
+                $user->setUsername($_POST['username']);
+                $user->setPasswd($_POST['passwd']);
+                $user->setUrole($_POST['urole']);
+                $user->setEmail($_POST['email']);
+                //** Update Model */
+                $userDAO = new UserDAO();
+                $userDAO->updateUser($user);
+            }
             //** Next View */
             header( "Location: start.php?action=userList");
             exit;

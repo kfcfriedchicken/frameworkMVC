@@ -8,7 +8,7 @@ class Controller{
 
     public function renderView($view,$data=[]){
         
-        include "./views/template.php";
+        include "./template/template.php";
     }
 }
 ?>

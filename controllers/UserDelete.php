@@ -9,12 +9,11 @@ class UserDelete extends Controller{
             $user = $userDAO->getUser($userID);
             $this->renderView("userDelete",$user);
         }else{
-            //** Get HTTP Input */
-            $userID=$_POST['userID'];
-            //** Update Model */
-            $userDAO = new UserDAO();
-            $userDAO->deleteUser($userID);
-            //** Next View */
+            if($_POST['submit']=='Confirm'){
+                $userID=$_POST['userID'];
+                $userDAO = new UserDAO();
+                $userDAO->deleteUser($userID);
+            }
             header( "Location: start.php?action=userList");
             exit;
         }

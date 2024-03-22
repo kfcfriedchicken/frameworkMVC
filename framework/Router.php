@@ -1,12 +1,12 @@
 <?php
-    include_once "Controller.php";
+    include_once "./framework/Controller.php";
 
     class Router{
         public $controllers;
 
         public function __construct(){
             $this->showErrors(0);
-            $this->$controllers['default']="";
+            $this->controllers=[];
         }
 
         public function run(){
@@ -18,12 +18,12 @@
             }
 
             //** Instantiate Controller for Action and Call*/
-            $controller = $this->$controllers[$action];
+            $controller = $this->controllers[$action];
             $controller->performAction();
         }
 
         public function addController($action,$controller){
-            $this->$controllers[$action] = $controller;
+            $this->controllers[$action] = $controller;
         }
 
         public function showErrors($debug){
