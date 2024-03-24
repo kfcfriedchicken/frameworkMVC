@@ -10,5 +10,9 @@ class Controller{
         
         include "./template/template.php";
     }
+
+    public function getAuth(){
+        return "PUBLIC";
+    }
 }
 ?>

@@ -78,7 +78,6 @@
             $found=$result->fetch_assoc();
             $stmt->close();
             $connection->close();
-            var_dump($found);
             return $found;
         }
 
