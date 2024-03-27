@@ -1,6 +1,6 @@
 <?php
 class Feature extends Controller{
-    public function perrformAction(){
+    public function performAction(){
         $this->renderView('feature',[]);
     }
 }
