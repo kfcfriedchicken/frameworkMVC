@@ -10,7 +10,14 @@
     include_once "./controllers/Feature.php";
     include_once "./controllers/Login.php";
 
-    $router = new Router();
+
+    class MyRouter extends Router{
+        public function authCheck($action){
+            return;
+        }
+    }
+
+    $router = new MyRouter();
     $router->showErrors(0);
 
     $router->addController('home',new Home());
