@@ -13,7 +13,8 @@
 
     class MyRouter extends Router{
         public function authCheck($action){
-            return;
+            $controller = $this-controllers[$action];
+            
         }
     }
 

@@ -10,5 +10,9 @@ class UserList extends Controller{
         $this->renderView("userList",$users);
     }
 
+    public function getAuth(){
+        return "PROTECTED";
+    }
+
 }
 ?>
