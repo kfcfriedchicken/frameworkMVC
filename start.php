@@ -13,8 +13,14 @@
 
     class MyRouter extends Router{
         public function authCheck($action){
-            $controller = $this-controllers[$action];
-            
+            $controller = $this->controllers[$action];
+            $access = $controller->getAuth();
+            if($access!="PUBLIC"){
+                if(!isset($_SESSION['loggedin'])){
+                    header("Location: start.php?action=login");
+                    exit;
+                }
+            }
         }
     }
 
