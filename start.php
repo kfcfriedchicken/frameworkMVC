@@ -25,7 +25,7 @@
     }
 
     $router = new MyRouter();
-    $router->showErrors(0);
+    $router->showErrors(1);
 
     $router->addController('home',new Home());
     $router->addController('about',new About());

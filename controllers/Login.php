@@ -9,7 +9,7 @@ class Login extends Controller{
                 $passwd = $_POST['passwd'];
 
                 $userDAO = new UserDAO();
-                $result = userDAO.authenticate($username,$passwd);
+                $result = $userDAO->authenticate($username,$passwd);
                 if($result==NULL){
                     header("Location: start.php?action=login");
                     exit;
